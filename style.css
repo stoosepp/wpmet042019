@@ -1,0 +1,453 @@
+/*
+Theme Name: MET Wordpress Theme
+Theme URI: http://newtheme.com
+Description: A description about the theme
+Author: Stoo Sepp
+Author URI: http://ets.educ.ubc.ca
+Version: 1.0
+Tags: responsive, black, white, columns, custom menu, etc.
+*/
+/* UBC COLORS */
+@import url("stylemobile.css") (max-width:600px);
+:root{
+	--ubc_blue:#002145;
+	--ubc_purple:#066887;
+	--white:#FFFFFF;
+	--PMS2935:0055B7;
+	--PMS2995:#00A7E1;
+	--PMS298:#40B4E5;
+	--PMS297:#6EC4E8;
+	--PMS2975:#97D4E9;
+	--metdarkgray:#5C666F;
+	--metlightgray:#ACACAC;
+	--metorange: #ff6a00;
+	--ubcpostbg:#e6e6e6
+	--ubcpostborder: #d8d8d8;
+}
+
+/* GLOBAL */
+html{
+	
+	}
+body{
+	margin:0px;
+	font-family: 'Lato', sans-serif;
+}
+body a{
+	text-decoration:none;
+}
+
+/* HEADER */
+#banner
+{
+	padding-left:5%;
+	padding-right:5%;
+	padding-top:5px;
+	padding-bottom:5px;
+	width:90%%;
+	height:105px;
+	vertical-align: text-bottom;
+	position: relative;
+}
+#banner img{
+	float:left;
+	height:105px;
+	width:auto;
+	margin-right:20px;
+}
+
+#banner h1{
+	margin:0px;
+	color:var(--ubc_blue);
+	font-weight: normal;
+	font-size:3em;
+	margin-right:10%;
+}
+#banner h2{
+	margin:0px;
+	font-weight:200px;
+	color:var(--ubc_purple);
+}
+#banner a{
+	color:var(--ubc_blue);
+	text-decoration: none;
+}
+#banner a:hover{
+	text-decoration: none;
+}
+.login-prompt{
+	position:absolute;
+	top:10px;
+	right:10px;
+	font-size: 1em;
+	color:var(--metlightgray);
+	text-align: right;
+}
+.login-prompt a{
+	font-size: 0.75em;
+	text-decoration: underline;
+	color:var(--ubc_blue);
+}
+.login-prompt a:hover{
+	text-decoration: underline;
+}
+#banner #about-the-course{
+	position: absolute;
+	right:10px;
+	bottom:10px;
+}
+/*SEARCH AND FILTER */
+#navbar{
+	background-color: var(--metdarkgray);
+	height:50px;
+	width:90%;
+	padding-left:5%;
+	padding-right:5%;
+	z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content-container {
+  padding-top: 50px;
+}
+.searchandfilter ul{
+	margin-left:-40px;
+}
+.searchandfilter ul li{
+	padding-top:1-px!important;
+}
+.searchandfilter[data-sf-form-id="53782"]
+{
+	width:90%;
+	padding-left:-5%;
+	padding-right:5%;
+}
+.searchandfilter[data-sf-form-id="53782"] > ul > li{
+		display:inline-block;
+		float:left;
+		padding-right:20px;
+	}
+	
+	
+.sf-input-select, .sf-input-text, .search-filter-reset{
+	color:white;
+	font-family: inherit;
+	font-size:1em;
+	font-weight:200;
+    background-color: var(--metdarkgray);
+    border: 1px solid white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+    line-height: 1.2em;
+    border-radius: 0;
+    display: block;
+}
+
+
+.sf-input-select{
+	background-image: url(images/selectbox-arrow.svg);
+    background-size: 22% 50%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.sf-field-search input {
+	min-width:300px;
+	background-color: white;
+	color:var(--ubc_blue);
+}
+.search-filter-reset{
+	padding-right:5px;
+	padding-left:5px;
+	text-align: center;
+	background-color: var(--metlightgray);
+	position:absolute;
+	right:5%;
+}
+.search-filter-reset:hover{
+	background-color: var(--metdarkgray);
+}
+	
+/* CONTENT */
+.content-container{
+	margin-left:5%;
+	margin-right:5%;
+}
+
+/* HOME POST ENTRY  */
+.post-container{
+	border-color: var(--ubcpostborder);
+	background-color:var(--ubcpostbg);
+	border-width: 1px;
+	border-style: solid;
+	min-height:150px;
+	margin-top:10px;
+	position: relative;
+	overflow-y: hidden;
+}
+.post-container:hover{
+	-webkit-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.20);
+-moz-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.20);
+box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.20);
+}
+
+.post-image{
+	z-index: 00;
+    overflow-y: hidden;
+    float: right;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+	
+}
+.post-image img{
+	height: 200px;
+	width: auto;
+	border-radius: 5px;
+}
+.home-author-image{
+	margin: 15px;
+    width: 75px;
+    float: left;
+    height:160px;
+}
+
+.home-author-image p{
+	font-size:0.80em;
+	position: absolute;
+	top: 120px;
+	text-align: center;
+	width:75px;
+	margin:0px;
+}
+
+.home-author-image img{
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--metlightgray);
+	border-radius: 50%;
+	
+	
+}
+
+.post-copy{
+	padding:10px;
+	/*margin-right:15%;*/
+	margin-left:100px;
+	
+}
+.post-copy h1, .post-copy h2{
+	margin:0px;
+	font-weight:400;
+	margin-right:150px;
+}
+
+.post-copy a{
+	text-decoration: none;
+	color:var(--ubc_blue);
+}
+.post-copy a:hover{
+	text-decoration: underline;
+	
+}
+.post-excerpt{
+	font-size:1.2em;
+	font-weight:200;
+}
+.post-meta{
+	margin:0px;
+	color:var(--ubc_purple);
+	font-style: italic;
+	font-weight:200;
+	font-size:0.9em;
+}
+.post-category{
+	margin:0px;
+}
+.post-category a{
+	/*position:absolute;
+	right:10px;
+	top:10px;*/
+	color:var(--metdarkgray);
+	font-weight:200;
+	
+}
+.stats-icon{
+	width:15px;
+	height:15px;
+	border:none !important;
+	position: relative;
+	top:2px;
+
+}
+.read-more-btn{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	padding:5px;
+	font-weight:200;
+	background-color:white;
+	border-style:solid;
+	border-width:1px;
+	border-color: var(--ubc_purple);
+	color:var(--ubc_purple);
+	
+	}
+.read-more-btn:hover{
+	background-color: var(--ubc_purple);
+	color:white;
+
+}
+
+.end-of-results{
+	    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    text-align: center;
+    font-style: italic;
+}
+
+/* HOME TAGS */
+
+.tags-panel{
+width:13%;
+height:98%;
+background-color: var(--ubc_blue);
+position:absolute;
+top:0px;
+right:0px;
+color:white;
+overflow-y:scroll;
+padding:1%;
+
+}
+.tags-panel h2{
+	color:white;
+	margin:5px;
+}
+.tags-panel a{
+	color:white;
+	font-size:0.75em;
+	margin:2px;
+	padding:3px;
+	border-style: solid;
+	border-width:1px;
+	border-radius: 1em;
+	line-height:2.2em;
+	white-space: nowrap;
+	text-decoration: none;
+}
+.tags-panel a:hover{
+	background-color:white;
+	color:var(--ubc_blue);
+}
+/* SINGLE POST */
+.single-back{
+	border: 1px solid white;
+    padding: 5px;
+    line-height: 1.2em;
+    border-radius: 0;
+    width:125px;
+    color:white;
+    position: relative;
+    top: 10px;
+}
+
+.single-back p{
+	margin:0px;
+	text-decoration: none;
+}
+.single-back:hover{
+	background-color:white; 
+	color:var(--metdarkgray);
+}
+.single-back a{
+	color:green;
+}
+
+
+.single-author-image{
+	margin: 20px;
+    width: 75px;
+    float: left;
+}
+
+.single-author-image p{
+	font-size:0.80em;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	width:75px;
+	margin:0px;
+}
+
+.single-author-image img{
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--metlightgray);
+	border-radius: 50%;
+}
+.single-post-container{
+	border-color: var(--ubcpostborder);
+	background-color:var(--ubcpostbg);
+	border-width: 1px;
+	border-style: solid;
+	margin-top:10px;
+	position: relative;
+	
+	}
+.single-post-container .post-copy{
+	margin-left:0px;
+}
+.post-navigation{
+	margin-top:20px;
+	border-color: var(--ubcpostborder);
+	background-color:var(--ubcpostbg);
+	border-width: 1px;
+	border-style: solid;
+	padding:10px;
+	height:50px;
+}
+.post-navigation h3{
+	margin:0px;
+	text-align: center;
+	font-weight: 200;
+	color:var(--ubcpurple);
+}
+
+.next-post{
+	float:right;
+}
+.prev-post{
+	float:left;
+}
+
+/* FOOTER */
+#footer-block{
+	margin-top:20px;
+	text-align:center;
+	padding:0,5%;
+	width:99%;
+	height:20px;
+	font-size: 0.75em;
+	background-color: var(--metlightgray);
+}
+#footer-block p{
+	margin:5px;
+	color:white;
+}
+#footer-block a{
+	color:white;
+}
+#footer-block a:hover{
+	text-decoration: underline;
+}
+
+
