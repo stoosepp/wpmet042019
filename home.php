@@ -32,11 +32,11 @@ function hugNavBarToTop() {
 		
 		<!--SEARCH AND FILTER-->
 		<div id="navbar">
-			<?php echo do_shortcode( '[searchandfilter id="53782"]' ); ?>
+			<?php echo do_shortcode( '[searchandfilter id="54446"]' ); ?>
 			
 		</div>
 		<div class="content-container">
-		<?php echo do_shortcode( '[searchandfilter id="53782" show="results"]' ); ?>
+		<?php echo do_shortcode( '[searchandfilter id="54446" show="results"]' ); ?>
 		
 		</div>
 		
