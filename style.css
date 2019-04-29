@@ -8,7 +8,7 @@ Version: 1.0
 Tags: responsive, black, white, columns, custom menu, etc.
 */
 /* UBC COLORS */
-@import url("stylemobile.css") (max-width:600px);
+@import url("stylemobile.css") screen and  (max-width:600px);
 :root{
 	--ubc_blue:#002145;
 	--ubc_purple:#066887;
