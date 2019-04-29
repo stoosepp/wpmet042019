@@ -15,8 +15,8 @@
 
 </script>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/style.css" />
-<!-- <script type='text/javascript' src='<?php get_site_url();?>/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type='text/javascript' src='<?php echo get_site_url();?>/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 		<!--<link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/css/font-awesome.min.css" />-->
 </head>
 <html>
