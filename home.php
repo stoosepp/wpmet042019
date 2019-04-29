@@ -32,14 +32,12 @@ function hugNavBarToTop() {
 		
 		<!--SEARCH AND FILTER-->
 		<div id="navbar">
-			<!--<p><a href="<?php get_site_url();?>/?_sft_category=announcements">Announcements</a></p>-->
-			<!-- <?php echo do_shortcode( '[searchandfilter id="53782"]' ); ?> -->
-			<?php echo do_shortcode( '[searchandfilter id="54446"]' ); ?>
+			<?php echo do_shortcode( '[searchandfilter id="53782"]' ); ?>
 			
 		</div>
 		<div class="content-container">
-		<!-- <?php echo do_shortcode( '[searchandfilter id="53782" show="results"]' ); ?> -->
-		<?php echo do_shortcode( '[searchandfilter id="54446" show="results"]' ); ?>
+		<?php echo do_shortcode( '[searchandfilter id="53782" show="results"]' ); ?>
+		
 		</div>
 		
 		<!--FOOTER-->
